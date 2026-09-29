@@ -153,7 +153,7 @@ The portfolio was engineered to meet the stringent requirements of **Core Web Vi
 - **Styling Architecture**:
   - **Custom Vanilla CSS**: Design tokens, variables, glassmorphic effects, keyframe animations (`src/styles/components.css`)
   - **Tailwind CSS v4**: Utility-first spacing, flexbox, grid, responsive layout system (`@tailwindcss/vite`)
-- **Animation / Visual Effects**: Native CSS Keyframes & Framer Motion (Aurora Canvas)
+- **Animation / Visual Effects**: Native GPU-Accelerated CSS Keyframes (Pure CSS Aurora Ambient Glow)
 - **Icons & Utilities**: Custom SVG Icons, `clsx`, `tailwind-merge`
 - **Linter & Code Quality**: Oxlint / ESLint
 - **Deployment Platform**: [Vercel](https://vercel.com/)
@@ -183,8 +183,7 @@ personal-website/
     │   ├── Portfolio.tsx    # STAR-structured project cards with dynamic category filtering
     │   ├── Experience.tsx   # Milestone timeline for professional experience & education
     │   ├── Contact.tsx      # Interactive contact form & professional social links
-    │   ├── Footer.tsx       # Copyright details and navigation links
-    │   └── ui/              # Visual effects components (Aurora ambient background)
+    │   └── Footer.tsx       # Copyright details and navigation links
     ├── data/
     │   └── profileData.ts   # Central decoupled profile data & TypeScript interfaces
     └── styles/

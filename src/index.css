@@ -1,19 +1,6 @@
 @import "tailwindcss";
 @import "./styles/components.css";
 
-@theme {
-  --animate-aurora: aurora 60s linear infinite;
-}
-
-@keyframes aurora {
-  from {
-    background-position: 50% 50%, 50% 50%;
-  }
-
-  to {
-    background-position: 350% 50%, 350% 50%;
-  }
-}
 
 /* 20% Element Scaling on desktop/tablet */
 @media (min-width: 768px) {

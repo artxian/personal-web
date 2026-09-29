@@ -7,7 +7,6 @@ import Portfolio from './components/Portfolio';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import { AuroraBackground } from './components/ui/aurora-background';
 
 function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -37,7 +36,7 @@ function App() {
   };
 
   return (
-    <AuroraBackground className="w-full">
+    <div className="aurora-bg-wrapper relative min-h-screen w-full">
       <div className="min-h-screen relative w-full">
         {/* Go to Top Floating Button */}
         {showScrollTop && (
@@ -76,7 +75,7 @@ function App() {
         {/* Footer */}
         <Footer />
       </div>
-    </AuroraBackground>
+    </div>
   );
 }
 
