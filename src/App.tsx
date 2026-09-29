@@ -13,16 +13,19 @@ function App() {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      const scrollAble = document.documentElement.scrollHeight - window.innerHeight;
-      if (window.scrollY >= scrollAble - 150) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollAble = document.documentElement.scrollHeight - window.innerHeight;
+          setShowScrollTop(window.scrollY >= scrollAble - 150);
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 

@@ -1,24 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useMemo } from 'react';
 import { profileData } from '../data/profileData';
 
+const getGreeting = (): string => {
+  const hours = new Date().getHours();
+  if (hours >= 1 && hours <= 9) return 'Good morning!';
+  if (hours >= 10 && hours <= 17) return 'Good afternoon!';
+  return 'Good evening!';
+};
+
 const Hero = () => {
-  const [greeting, setGreeting] = useState('...');
-
-  useEffect(() => {
-    const updateGreeting = () => {
-      const hours = new Date().getHours();
-      if (hours >= 1 && hours <= 9) {
-        setGreeting('Good morning!');
-      } else if (hours >= 10 && hours <= 17) {
-        setGreeting('Good afternoon!');
-      } else {
-        setGreeting('Good evening!');
-      }
-    };
-
-    const interval = setInterval(updateGreeting, 1000);
-    return () => clearInterval(interval);
-  }, []);
+  const greeting = useMemo(() => getGreeting(), []);
 
   return (
     <section className="flex flex-col justify-center items-start gap-6 min-h-screen w-full max-w-300">

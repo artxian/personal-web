@@ -15,41 +15,35 @@ const Navbar = () => {
     if (isDark) {
       document.body.classList.add('dark');
       document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
     } else {
       document.body.classList.remove('dark');
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
     }
   }, [isDark]);
 
   useEffect(() => {
     let lastScroll = 0;
+    let ticking = false;
 
     const handleScroll = () => {
-      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      const scrollAble = document.documentElement.scrollHeight - window.innerHeight;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScroll = window.scrollY || document.documentElement.scrollTop;
 
-      if (currentScroll <= lastScroll) {
-        // Scrolling up -> show header
-        setIsScrollDown(false);
-      } else if (currentScroll > 100 && currentScroll > lastScroll) {
-        // Scrolling down -> hide header
-        setIsScrollDown(true);
+          if (currentScroll <= lastScroll) {
+            // Scrolling up -> show header
+            setIsScrollDown(false);
+          } else if (currentScroll > 100 && currentScroll > lastScroll) {
+            // Scrolling down -> hide header
+            setIsScrollDown(true);
+          }
+
+          setIsScrolled(currentScroll >= 10);
+          lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+          ticking = false;
+        });
+        ticking = true;
       }
-
-      if (currentScroll >= scrollAble - 10) {
-        // Reached bottom -> show header
-        setIsScrollDown(false);
-      }
-
-      if (currentScroll >= 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-
-      lastScroll = currentScroll <= 0 ? 0 : currentScroll;
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -77,7 +71,15 @@ const Navbar = () => {
   };
 
   const toggleTheme = () => {
-    setIsDark((prev) => !prev);
+    setIsDark((prev) => {
+      const next = !prev;
+      try {
+        localStorage.setItem('theme', next ? 'dark' : 'light');
+      } catch {
+        // Ignore storage errors in private browsing
+      }
+      return next;
+    });
   };
 
   return (
