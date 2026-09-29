@@ -87,7 +87,7 @@ export const profileData: ProfileData = {
     greeting: 'Hello there!',
     description: 'I’m a software engineer passionate about combining clean code with thoughtful design to build exceptional digital experiences.',
     email: 'kelvinnatanael13@gmail.com',
-    avatar: '/img/headshot.jpg',
+    avatar: '/img/headshot.webp',
     resumeUrl: '#',
   },
 
@@ -100,7 +100,7 @@ export const profileData: ProfileData = {
       'Proactive & Clear Communication',
       'Continuous Technical Improvement',
     ],
-    headshot: '/img/headshot.jpg',
+    headshot: '/img/headshot.webp',
   },
 
   skills: [
@@ -159,7 +159,7 @@ export const profileData: ProfileData = {
       techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Core Web Vitals'],
       demoUrl: 'https://drian.xyz',
       repoUrl: 'https://github.com/andriandme/personal-website',
-      image: '/img/headshot.jpg',
+      image: '/img/headshot.webp',
     },
     {
       id: 'ecommerce-platform',
@@ -173,7 +173,7 @@ export const profileData: ProfileData = {
       techStack: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Tailwind CSS', 'REST API'],
       demoUrl: '#',
       repoUrl: 'https://github.com/andriandme',
-      image: '/img/headshot.jpg',
+      image: '/img/headshot.webp',
     },
     {
       id: 'task-collaboration-app',
@@ -187,7 +187,7 @@ export const profileData: ProfileData = {
       techStack: ['TypeScript', 'React', 'Redux Toolkit', 'Tailwind CSS', 'Express'],
       demoUrl: '#',
       repoUrl: 'https://github.com/andriandme',
-      image: '/img/headshot.jpg',
+      image: '/img/headshot.webp',
     },
   ],
 
@@ -238,7 +238,7 @@ export const profileData: ProfileData = {
       name: 'Alex Pratama',
       role: 'Senior Frontend Engineer',
       company: 'Digital Innovation Hub',
-      avatar: '/img/headshot.jpg',
+      avatar: '/img/headshot.webp',
       quote: 'Kelvin brings a rare combination of sharp aesthetic intuition and solid engineering discipline. His attention to detail and ability to deliver clean, maintainable code is outstanding.',
     },
     {
@@ -246,7 +246,7 @@ export const profileData: ProfileData = {
       name: 'Sarah Wijaya',
       role: 'Product Manager',
       company: 'Creative Studio',
-      avatar: '/img/headshot.jpg',
+      avatar: '/img/headshot.webp',
       quote: 'Working with Kelvin was a breeze. He consistently hit deadlines, communicated proactively, and ensured our web platform felt blazing fast across all mobile devices.',
     },
   ],

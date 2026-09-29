@@ -26,10 +26,13 @@ const Hero = () => {
       <h3 className="hero-greeting flex items-center gap-3 m-0 mb-7 ml-1">
         <div>{greeting}</div>
         <img
-          src="/img/emojis/wave.png"
+          src="/img/emojis/wave.webp"
           alt="Waving hand greeting"
           width={48}
           height={48}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
           className="w-12 h-12 inline-block align-text-bottom animate-wave cursor-grab"
         />
       </h3>
@@ -49,10 +52,13 @@ const Hero = () => {
       <h2 className="hero-contact m-0 mt-6 flex items-center flex-wrap gap-y-1">
         <span>Get in touch</span>
         <img
-          src="/img/emojis/pointright.png"
+          src="/img/emojis/pointright.webp"
           alt="Point right indicator"
           width={36}
           height={36}
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
           className="w-9 h-9 mx-3 inline-block align-bottom shrink-0"
         />
         <a

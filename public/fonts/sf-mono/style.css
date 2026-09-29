@@ -3,7 +3,8 @@
     @font-face {
     font-family: 'SF Mono Regular';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Regular'), url('SFMonoRegular.woff') format('woff');
     }
     
@@ -11,7 +12,8 @@
     @font-face {
     font-family: 'SF Mono Regular Italic';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Regular Italic'), url('SFMonoRegularItalic.woff') format('woff');
     }
     
@@ -19,7 +21,8 @@
     @font-face {
     font-family: 'SF Mono Light';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Light'), url('SFMonoLight.woff') format('woff');
     }
     
@@ -27,7 +30,8 @@
     @font-face {
     font-family: 'SF Mono Light Italic';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Light Italic'), url('SFMonoLightItalic.woff') format('woff');
     }
     
@@ -35,7 +39,8 @@
     @font-face {
     font-family: 'SF Mono Medium';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Medium'), url('SFMonoMedium.woff') format('woff');
     }
     
@@ -43,7 +48,8 @@
     @font-face {
     font-family: 'SF Mono Medium Italic';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Medium Italic'), url('SFMonoMediumItalic.woff') format('woff');
     }
     
@@ -51,7 +57,8 @@
     @font-face {
     font-family: 'SF Mono Semibold';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Semibold'), url('SFMonoSemibold.woff') format('woff');
     }
     
@@ -59,7 +66,8 @@
     @font-face {
     font-family: 'SF Mono Semibold Italic';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Semibold Italic'), url('SFMonoSemiboldItalic.woff') format('woff');
     }
     
@@ -67,7 +75,8 @@
     @font-face {
     font-family: 'SF Mono Bold';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Bold'), url('SFMonoBold.woff') format('woff');
     }
     
@@ -75,7 +84,8 @@
     @font-face {
     font-family: 'SF Mono Bold Italic';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Bold Italic'), url('SFMonoBoldItalic.woff') format('woff');
     }
     
@@ -83,7 +93,8 @@
     @font-face {
     font-family: 'SF Mono Heavy';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Heavy'), url('SFMonoHeavy.woff') format('woff');
     }
     
@@ -91,6 +102,7 @@
     @font-face {
     font-family: 'SF Mono Heavy Italic';
     font-style: normal;
-    font-weight: normal;
+    font-weight: ;
+    font-display: swap;
     src: local('SF Mono Heavy Italic'), url('SFMonoHeavyItalic.woff') format('woff');
     }

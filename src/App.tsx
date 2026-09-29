@@ -44,11 +44,12 @@ function App() {
             className="btn-go-top"
           >
             <img
-              src="/img/emojis/pointing-up.png"
+              src="/img/emojis/pointing-up.webp"
               alt="Scroll back to top"
               width={30}
               height={30}
               loading="lazy"
+              decoding="async"
               className="w-7.5 h-7.5"
             />
           </button>

@@ -31,11 +31,13 @@ const About = () => {
         {/* Right: Headshot using .about-headshot-wrapper */}
         <div className="about-headshot-wrapper">
           <img
-            src="/img/headshot.jpg"
+            src="/img/headshot.webp"
             alt={`Portrait of ${profileData.hero.name}`}
             width={350}
             height={350}
-            loading="lazy"
+            fetchPriority="high"
+            loading="eager"
+            decoding="async"
           />
         </div>
       </div>

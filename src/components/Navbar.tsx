@@ -96,6 +96,8 @@ const Navbar = () => {
                 alt="Kelvin Andrian Nataniel signature"
                 width={32}
                 height={32}
+                loading="lazy"
+                decoding="async"
                 className="h-8 w-8 rounded"
               />
             </a>
@@ -210,6 +212,8 @@ const Navbar = () => {
               alt="Logo"
               width={28}
               height={28}
+              loading="lazy"
+              decoding="async"
               className="h-7 w-7 rounded-md"
             />
             <span className="font-mono text-xs uppercase tracking-widest font-semibold">
