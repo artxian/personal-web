@@ -1,0 +1,145 @@
+@import "tailwindcss";
+@import "./styles/components.css";
+
+@theme {
+  --animate-aurora: aurora 60s linear infinite;
+}
+
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+/* 20% Element Scaling on desktop/tablet */
+@media (min-width: 768px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+/* Custom Scrollbar — Light & Dark Mode */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: black rgb(220, 220, 220);
+  scrollbar-gutter: stable;
+}
+
+html.dark,
+body.dark {
+  scrollbar-color: white rgb(10, 10, 10);
+
+  ::selection {
+    background-color: #001e3380;
+    color: #00c3ff;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+::selection {
+  background-color: #001a2ce8;
+  color: #00c3ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F9F9;
+  color: #333333;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  /* Prevent horizontal overflow / scroll on mobile */
+  overflow-x: hidden;
+}
+
+/* Keyframe animations matching original style.css */
+@keyframes animWave {
+  0% {
+    transform: scale(98%) translateX(0) rotateZ(0deg);
+  }
+
+  20% {
+    transform: scale(98%) translateX(-14%) rotateZ(-10deg);
+  }
+
+  40% {
+    transform: scale(98%) translateX(14%) rotateZ(10deg);
+  }
+
+  60% {
+    transform: scale(98%) translateX(-14%) rotateZ(-10deg);
+  }
+
+  80% {
+    transform: scale(98%) translateX(14%) rotateZ(10deg);
+  }
+
+  100% {
+    transform: scale(98%) translateX(0) rotateZ(0deg);
+  }
+}
+
+@keyframes introKananKiri {
+  0% {
+    transform: translate3d(200%, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(-10%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-wave:hover {
+  animation: animWave 1s ease;
+}
+
+.animate-intro-right-left {
+  animation: introKananKiri 2s ease;
+}
+
+.animate-intro-resume {
+  animation: introKananKiri 3s ease-in-out;
+}
+
+/* Reusable animated link underline matching original a.text */
+.link-underline {
+  color: #007AFF;
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+  overflow: hidden;
+  transition: color 0.25s ease;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.07em;
+  background-color: #007AFF;
+  transform: translate3d(-110%, 0, 0);
+  transition: transform 300ms ease;
+}
+
+.link-underline:hover::after,
+.link-underline:focus::after {
+  transform: translate3d(0, 0, 0);
+}
