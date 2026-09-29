@@ -233,7 +233,7 @@ npm run preview
 
 **Kelvin Andrian Nataniel**  
 - **Email**: [kelvinnatanael13@gmail.com](mailto:kelvinnatanael13@gmail.com)  
-- **LinkedIn**: [@kelvin-nataniel-dev](linkedin.com/in/kelvin-nataniel-dev)  
+- **LinkedIn**: [linkedin.com/in/kelvin-nataniel-dev](linkedin.com/in/kelvin-nataniel-dev)  
 - **GitHub**: [@artxian](https://github.com/artxian)  
 - **Portfolio**: [drian.xyz](https://drian.xyz)  
 
