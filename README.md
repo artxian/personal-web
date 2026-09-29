@@ -1,6 +1,6 @@
 # Kelvin Andrian Nataniel - Personal Portfolio Website
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://drian.xyz)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://personal-web-snowy-gamma.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/artxian/personal-web)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -38,7 +38,7 @@ This portfolio website was designed and engineered from the ground up to serve a
 
 ## 🔗 Live Demo & Repository
 
-- **Live Production URL (Vercel)**: [https://drian.xyz](https://drian.xyz) *(or active Vercel deployment domain)*
+- **Live Production URL (Vercel)**: [https://personal-web-snowy-gamma.vercel.app] *(or active Vercel deployment domain)*
 - **GitHub Repository**: [https://github.com/artxian/personal-web](https://github.com/artxian/personal-web)
 
 ---
@@ -234,7 +234,7 @@ npm run preview
 - **Email**: [kelvinnatanael13@gmail.com](mailto:kelvinnatanael13@gmail.com)  
 - **LinkedIn**: [linkedin.com/in/kelvin-andrian-nataniel](https://linkedin.com)  
 - **GitHub**: [@artxian](https://github.com/artxian)  
-- **Portfolio**: [drian.xyz](https://drian.xyz)  
+<!-- - **Portfolio**: [drian.xyz](https://drian.xyz)   -->
 
 ---
 *Engineered with dedication for Code Challenge 2 evaluation (Full Stack Web Development Program).*
